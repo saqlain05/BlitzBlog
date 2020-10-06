@@ -1,0 +1,33 @@
+.singlePost{
+    margin: auto;
+  width: 50%;
+  padding: 10px;
+  background-color: rgb(240, 240, 240);
+
+  .date{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: .7rem;
+  }
+
+    .singlePostimg{
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding-bottom: 1rem;
+        
+    }
+    .title{
+        text-align: left;
+        padding-bottom: .5rem;
+        color: rgb(219, 44, 219)
+    }
+}
+@media screen and (max-width: 480px) {
+    .singlePost{
+        margin: auto;
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(240, 240, 240);
+    }
+  }

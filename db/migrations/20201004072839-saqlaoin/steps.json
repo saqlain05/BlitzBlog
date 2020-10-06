@@ -1,0 +1,59 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "DeleteModel",
+      "model": "Category"
+    },
+    {
+      "tag": "CreateField",
+      "model": "User",
+      "field": "Post",
+      "type": "Post",
+      "arity": "List"
+    },
+    {
+      "tag": "UpdateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "User",
+          "field": "role"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "newValue": "\"author\""
+    },
+    {
+      "tag": "CreateField",
+      "model": "Post",
+      "field": "imageUrl",
+      "type": "String",
+      "arity": "Required"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Post",
+      "field": "imageURL"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Post",
+      "field": "string"
+    },
+    {
+      "tag": "UpdateField",
+      "model": "Post",
+      "field": "user",
+      "arity": "Required"
+    },
+    {
+      "tag": "UpdateField",
+      "model": "Post",
+      "field": "userId",
+      "arity": "Required"
+    }
+  ]
+}
